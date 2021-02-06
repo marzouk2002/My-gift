@@ -38,5 +38,5 @@ for (let i=0;i<=3;i++) {
     }, n+2600);
 }
 setTimeout(() => {
-    title.innerHTML="Happy birthday <strong>A ZAML</strong>!!"
+    title.innerHTML="Happy birthday <strong>BROO</strong>!!"
 }, 10500);
