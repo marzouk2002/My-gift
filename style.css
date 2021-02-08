@@ -6,12 +6,22 @@
 }
 
 body{
+    width: 100%;    
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     height: 100vh;
-    background-color: white;
+    width: 100%;
+    background-color: white; 
 }
 h1{
     position: relative;
@@ -20,4 +30,60 @@ h1{
     font-family: Roboto,sans-serif;
     color: #ff2600;
     text-shadow: 5px 5px black;
+}
+
+#c1{
+    transform: scale(1);
+    animation: anim1 3500ms backwards step-end 4 ;
+}
+
+#c2{
+    opacity: 0;
+    color: white;
+    background-color: #ff2600;
+    transform: scale(1);
+    animation: anim2 3500ms backwards step-end 4;
+}
+
+#c2>h1{
+    color: white;
+}
+
+@keyframes anim2{
+    0%{
+        opacity: 0;
+    }
+    12.33%{
+        opacity: 1;
+    }
+    24.66%{
+        opacity: 0;
+    }
+    37%{
+        opacity: 1;
+    }
+    49.33%{
+        opacity: 0;
+    }
+    61.66%{
+        opacity: 1;
+    }
+    74%,100%{
+        opacity: 0;
+    }
+}
+
+@keyframes anim1 {
+    0%,74%{
+        transform: scale(1);
+    }
+    82.66%{
+        transform: scale(1.2);
+    }
+    91%{
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
